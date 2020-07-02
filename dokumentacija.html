@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="CSS/lgaric.css">
+        <link rel="stylesheet" type="text/css" href="CSS/lgaric_prilagodbe.css">
+        <meta name="naslov" content="Pocetna stranica">
+        <meta name="datum posljednje promjene" content="3.4.2018">
+        <meta name="autor" content="Luka Garić">
+        <link rel="icon" href="http://webdip.barka.foi.hr/2017_projekti/WebDiP2017x044/favicon.ico">
+        <link href="https://fonts.googleapis.com/css?family=BioRhyme" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>            
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
+        <title>Dokumentacija</title>
+    </head>
+    <body>
+        <nav class="navigacija">
+            <div class="navigacija_div sirina">
+                <ul id="prvi">
+                    <li style="padding-right: 40px;" ><a href="index.php"><img id="home" src="Multimedija/Logo_transparent.png" alt="Početna"></a></li>
+                    <li class="desktop"><a href="o_autoru.html">O autoru</a></li>
+                    <li class="desktop"><a href="index.php#kategorije">Kategorije</a></li>
+                </ul>                
+                <img id='menu' src='Multimedija/mobile-menu.png' alt='Mobile menu'>
+                <div class='mobile-nav hidden'>
+                    <ul id='mobile-nav'>
+                        <li class="mobile"><a href="o_autoru.html">O autoru</a></li>
+                        <li class='mobile'><a href='index.php#kategorije'>Kategorije</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <header>
+            <div class="sirina_tekst">
+                <div style="text-align: center;"><div id="naslovnica_border">Dobrodošli!</div><p class="naslov"> Dokumentacija stranice </p></div></div>
+        </header>
+
+        <section id="natjecanja" class="sectionA sirina">
+            <div class="boxBijeli">
+                <div class="naslov ravno border_bottom">Opis projektnog zadatka</div>
+                <div class="tekst">
+                    <p>Sustav koji omogućuje korisniku provjeru znanja kroz razna natjecanja s drugim korisnicima. Natjecanjima i statistici natjecanja mogu pristupiti svi korisnici. Također mogu vidjeti sve oglase
+                        postavljene od strane registriranih korisnika. <br>Sustav ima 4 uloge: <br></p>
+                    <ul>
+                        <li>Administrator</li>
+                        <li>Moderator</li>
+                        <li>Registrirani korisnik</li>
+                        <li>Neregistrirani korisnik</li>
+                    </ul>
+                    <br>
+                    <p><b>Administrator</b> → ima puni pristup cijelom sustavu.</p>
+                    <p><b>Moderator</b> → moderira kategorijom i pozicijom oglasa koju mu je dodijelio administrator. Ima puni pristup samo u dodjeljenim dijelovima sustava. Može dodavati vrste oglasa
+                        na poziciji za koju je zadužen. Ima uvid u sve oglase na zaduženoj poziciji te popis zahtjeva za blokiranje oglasa. Može dodavati pitanja u kategorijama koje kasnije povezuje s 
+                        natječajima. </p>
+                    <p><b>Registrirani korisnik</b> → može kreirati zahtjev za kreiranje novog oglasa (koji odobrava moderator). Također može poslati zahtjev za blokiranjem aktivnih oglasa koje je moderator
+                        dužan pregledati te odobriti ili odbiti. Ima puni uvid u svoje oglase (i statistiku istih) koje može ažurirati ukoliko nije prihvaćen ili odobren od strane moderatora. </p>
+                    <p><b>Neregistrirani korisnik</b> → vidi popis svih kategorija i natjecanja. Može sudjelovati u bilo kojem natjecanju bez registracije u sustav. Također vidi statistiku svih natjecanja te sve
+                        oglase.</p><br>
+                </div>
+
+                <div class="naslov ravno border_bottom">Opis projektnog rješenja</div>
+                <div class="tekst">
+                    <p>Projektno rješenje je kreirano u NetBeans IDE 8.2 alatu. Cijelo rješenje preneseno je na poslužitelj Fakulteta organizacije i informatike. 
+                        postavljene od strane registriranih korisnika. <br><br><b>Korištene tehnologije:</b> <br></p>
+                    <ul>
+                        <li>NetBeansIDE 8.2</li>
+                        <li>FileZilla</li>
+                        <li>Putty</li>
+                    </ul>
+                </div>
+
+                <div class="naslov ravno border_bottom">Skripte</div>
+                <div class="tekst">
+                    <p><b>Korištene skripte:</b> <br></p>
+                    <ul>
+                        <li>baza.class.php</li>
+                        <li>sesija.class.php</li>
+                        <li>lgaric.class.php</li>
+                        <li>AccessDatabase.php</li>
+
+                    </ul>
+                    <br><br>
+                    <p><b>baza.class.php</b> → Skripta za pristup bazi podataka preuzeta s moodle sustava. Nije dodatno modificirana osim unosa podataka za pristup bazi.</p> 
+                    <p><b>sesija.class.php</b> → Skripta za kreiranje i manipulaciju sesijom preuzeta s moodle sustava. U skripti su izmjenjane samo konstante (izbrisana košarica te dodane konstante za tip i id korisnika.</p> 
+                    <p><b>lgaric.class.php</b> → Vlastita skripta za izvršavanje generičkih funkcija koje su potrebne kroz cijeli projekt. Unutar ove skripte se uključuju baza.class.php i sesija.class.php te je uključena u svaku stranicu
+                        sustava. Skripta sadrži samo statičke metode koje se kao takve i pozivaju kroz cijeli projekt.</p>
+                    <p><b>AccessDatabase.php</b> → Vlastita skripta koja odgovara na AJAX zahtjeve (kada je to potrebno). Ova skripta također prima određene parametre i izvršava zahtjevane zadatke (blokiranje korisnika, spremanje novog
+                        virtualnog vremena u file itd.</p>
+                    
+                    <br><b>Online skripte korištene u projektu:</b> <br>
+                    <ul>
+                        <li>JQuery 3.3.1</li>
+                        <li>DataTables</li>
+                    </ul>
+                </div>
+
+                <div class="naslov ravno border_bottom">ERA model</div>
+                <figure>
+                    <img style="width: 100%;" src="Multimedija/era_v12.png" alt="ERA">
+                    <figcaption class="naslovSlike"><i>Slika 1. ERA model</i></figcaption>
+                </figure>
+
+                <p class="tekst">ERA model izrađen je u alatu MySQL Workbench pomoću kojeg je generiran SQL izvještaj modela u .sql datoteku (Forward Engineering).</p>
+
+
+                <div class="naslov ravno border_bottom">Navigacijski dijagram</div>
+                <figure>
+                    <img style="width: 100%;" src="Multimedija/navigacijskiDijagram_v2.png" alt="Navigacijski dijagram">
+                    <figcaption class="naslovSlike"> <i>Slika 2. Navigacijski dijagram</i></figcaption>
+                </figure>
+
+                <p class="tekst">Navigacijski dijagram je izrađen u Draw.io online alatu te prikazuje način kretanja kroz web sustav za sve korisnike.</p>
+
+                <div class="naslov ravno border_bottom">Mapa mjesta</div>
+                <figure>
+                    <img style="width: 100%;" src="Multimedija/tree.png" alt="Mapa mjesta">
+                    <figcaption class="naslovSlike"> <i>Slika 3. Mapa mjesta</i></figcaption>
+                </figure>
+
+                <p class="tekst">Mapa mjesta generirana pomoću naredbe "tree /f > tree.txt" u PowerShell-u. Lijeva strana sadrži sve skripte unutar glavnog direktorija projekta i sadržaj datoteka CSS, Privatno i JS.
+                    Desna strana slike sadrži mapu Multimedija s popisom svih slika unutar projekta. Slike unutar projekta mogu odstupati od navedene mape mjesta dok je sve ostalo statičko.</p>
+                
+                <div class="naslov ravno border_bottom">Greške</div>
+                
+                <ul class="tekst">
+                    <li><b>Prikazivanje oglasa</b> → svi oglasi se prikazuju na svim stranicama neovisno o poziciji i vrsti. Također se ne obavlja provjera je li pojedini oglas blokiran ili odobren.
+                    Ukratko, svi oglasi se prikazuju na svim pozicijama.</li>
+                    <li><b>Blokiranje oglasa</b> → Vlasniku oglasa se ne šalje email ukoliko je oglas blokiran.</li>
+                    <li><b>Zahtjevi za oglase</b> → Svi moderatori vide sve zahtjeve za kreiranje oglasa i sve zahtjeve za blokiranje oglasa.</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="footer sirina">
+            <div id="footer_div">
+                <div id="autor">Autor stranice</div>
+                <address>Kontakt: <a href="mailto:lgaric@foi.hr">Luka Garić</a></address>
+                <p>&copy; 2018 L.Garić</p>
+            </div>
+            <div style="text-align: center">
+                <a class="validate" href="http://validator.w3.org/check?uri=referer">
+                    <figure>
+                        <img src="Multimedija/HTML5.png" alt="HTML5" height="75" width="75">
+                        <figcaption>Validate</figcaption>
+                    </figure>
+                </a>
+                <a class="validate" href="https://jigsaw.w3.org/css-validator/validator?uri=http://webdip.barka.foi.hr/2017_projekti/WebDiP2017x044/dokumentacija.html">
+                    <figure>
+                        <img src="Multimedija/CSS3.png" alt="CSS3" height="75" width="75">
+                        <figcaption>Validate</figcaption>
+                    </figure>
+                </a>
+            </div>
+        </footer>
+        <script src="JS/lgaric.js" type="text/javascript"></script>
+    </body>
+</html>

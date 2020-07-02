@@ -1,0 +1,449 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 3, 2018, 9:12:00 PM
+    Author     : lukag
+*/
+
+
+html, body, div, nav, ul, li, a, figcaption, figure, header, footer{  /* default */
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+body{
+    z-index: -5;
+    background: #eeeeee;
+}
+
+.navigacija{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    z-index: 10;
+}
+
+
+.navigacija .sirina{
+    background: #323232;
+    height: 100%;
+    position: relative;
+    opacity: 0.9;
+}
+
+.sirina{
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+
+#prvi, #drugi{
+    position: absolute;
+    top: 0;
+    text-align: center; 
+}
+
+#prvi{
+    left: 40px;
+}
+
+#drugi{
+    right: 40px;
+}
+
+.navigacija div ul li, .navigacija div ul li div{ /* Izgled navigacije */ 
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'BioRhyme', serif;
+    color: white;
+    padding-right: 15px;
+    line-height: 70px;
+}
+
+.navigacija div ul li a{ /* Tekst navigacije */
+    color: white;
+    text-decoration: none;
+}
+
+.navigacija div ul li a:hover{
+    color: #aaaaaa;
+    cursor: pointer;
+}
+
+.navigacija .navigacija_div .mobile-nav #mobile-nav{
+    top: 70px;
+    width: 200px;
+    right: 0;
+    position: absolute;
+    background: white;
+}
+
+.navigacija .navigacija_div .mobile-nav #mobile-nav li{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.navigacija .navigacija_div .mobile-nav #mobile-nav li:hover{
+    font-weight: bold;
+}
+
+.navigacija .navigacija_div .mobile-nav #mobile-nav li a{
+    color: black;
+}
+
+.navigacija .navigacija_div #menu{
+    height: 40px;
+    width: 40px;
+    right: 30px;
+    position: absolute;
+    top: 15px;
+}
+
+.navigacija .navigacija_div #menu:hover{
+    cursor: pointer;
+}
+
+#btnRegistracija, btnRegistracija1{
+    font-weight: bold;
+}
+
+#home{ /* Slika Home */
+    height: 30px;
+}
+
+.mobile-nav #mobile-nav #imeKorisnika:hover{
+    font-weight: normal;
+}
+
+#glavnaSlika img{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+#glavnaSlika{
+    height: 700px;
+}
+
+.sectionA, .sectionB{
+    padding-top: 20px;
+}
+
+.paddingTop{
+    padding-top: 80px;
+}
+
+.naslov{
+    font-family: 'BioRhyme', serif;
+    text-align: center;
+    color: #444444;
+    font-size: 45px;
+    max-width: 800px;
+    margin:  35px auto;
+}
+
+.tekst_uvod{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto 70px;
+}
+
+#gumb_kategorije{ /* Gumb prijava */
+    margin: 0 auto;
+    text-align: center;
+    background: #915047;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #111133;
+    padding: 0.7em 1.2em;
+    border-radius: 10px;
+    font-family: 'BioRhyme', serif;
+}
+
+#gumb_kategorije:hover{
+    color: #aaaaaa;
+    background: #703025;
+    cursor: pointer;
+}
+
+.kartice_box{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Duplakartica{
+    margin: 0 40px 40px 0;
+    background: white;
+    transition: 0.6s;
+}
+
+.Duplakartica a, .kartica a{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.kartica{
+    margin: 0 40px 40px 0;
+    background: white;
+    transition: 0.6s;
+}
+
+.naslov_kartice{
+    padding-top: 20px;
+    font-family: 'BioRhyme', serif;
+    font-size: 130%;
+    font-weight: bold;
+    margin: 0 40px;
+}
+
+.slikaDupleKartice, .slikaKartice{
+    width: 100%;
+    height: 300px;
+}
+
+.tekst_kartice{
+    padding: 20px 0;
+}
+
+.tekst{
+    padding: 20px 80px;
+    font-family: 'BioRhyme', serif;
+}
+
+.naslovSlike{
+    text-align: center;
+    font-style: italic;
+}
+
+.Duplakartica:hover, .kartica:hover{
+    box-shadow: 5px 5px 30px 3px grey;
+    transition: 0.6s;
+}
+
+
+#naslovnica_tekst{
+    font-size: 350%;
+    text-align: center;
+    color: #eeeeee;
+    padding: 100px 0 50px;
+}
+
+#naslovnica_border{
+    width: 300px;
+    padding: 1em 1em;
+    margin: 150px auto 25px;
+    text-align: center;
+    border: 1.5px #444444 solid;
+}
+
+.sirina_tekst{ /* Opis stranice */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer{
+    background: white;
+    font-size: 150%;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #444444;
+}
+
+.footer a:hover{
+    font-weight: bold;
+    color: #915047;
+}
+
+#footer_div{
+    padding: 40px 0 0 50px;
+}
+
+#autor{ /* Autor u footeru */
+    margin: 15px 0;
+    font-family: 'BioRhyme', serif;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.validate{ /* HTML i CSS validacije */
+    display: inline-block;
+    padding: 3em 2em 1em;
+}
+
+.forma{ /* div formi */
+    background: white;
+    margin: 10px auto;
+    padding: 40px 0 20px 0;
+}
+
+.form{ /* pojedinacne forme */
+    margin: 0 40px;
+}
+
+label, input, textarea{
+    width: 100%;
+    margin: 5px;
+}
+
+input{
+    border-radius: 5px;
+    border-style: inset;
+}
+
+#prijava_gumb{
+    box-shadow: 2px 1.5px grey;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.gumbi a{
+    box-shadow: 2px 1.5px grey; /* oponaša border-style: outset */
+    border-radius: 5px;
+    border-style: inset;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.gumb{
+    border-style: outset;
+    background: #dfd0d7;
+    margin: 5px 0;
+    padding: 0.3em;
+}
+
+.gumb:hover{
+    font-weight: bold;
+    color: #915047;
+    cursor: pointer;
+}
+
+.ravno{
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}
+
+#Prijava{
+    margin-top: 40px;
+}
+
+.boxBijeli{
+    background: white;
+    text-align: left;
+    padding: 30px;
+    margin: 20px auto;
+}
+
+.border_bottom{
+    border-bottom: 2px solid #444444;
+    width: 90%;
+    margin: 0 auto 40px;
+}
+
+table{
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.zeleno{
+    color: #005c00;
+    font-weight: bold;
+}
+
+.crveno{
+    color: #9c0000;
+    font-weight: bold;
+}
+
+#oglasi{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.oglas{
+    border: 1px solid black;
+    height: 200px;
+    margin-bottom: 20px;
+    background: white;
+}
+
+#oglas-1, #oglas-3, #oglas-5{
+    margin-right: 10px;
+}
+
+#oglas-7{
+    margin-top: 65px;
+    height: 300px;
+    margin-bottom: 0;
+}
+
+.slikaoglasa{
+    height: inherit;
+    width: 100%;
+}
+
+.naslov_oglasa{
+    font-weight: bold;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.opis_oglasa{
+    color: black;
+}
+
+.tekst_oglasa{
+    text-align: left;
+    padding-top: 25px;
+}
+
+.oglasi_grid{
+    height: inherit;
+    text-decoration: none;
+}
+
+.oglasi_grid:hover{
+    cursor: pointer;
+}
+
+.oglas_block{
+    text-align: center;
+    z-index: 100;
+}
+
+.oglasi_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+#nemaNatjecanja{
+    flex: 100%;
+    margin-bottom: 100px;
+}
+
+#oglasi div .oglas_block{
+    text-decoration: none;
+    color: black;
+}

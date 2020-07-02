@@ -1,0 +1,123 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 6, 2018, 10:13:24 AM
+    Author     : grupa_1
+*/
+
+
+
+/*Tablet & Mobile*/
+
+@media screen and (max-width: 1101px)
+{
+
+    .sirina{
+        margin: 0 70px;
+        max-width: 100%;
+    }
+
+    .navigacija div ul .desktop{
+        display: none;
+    }
+
+    #prijava_gumb{
+        width: 100%;
+        display: inline-block;
+    }
+
+    label, input, textarea, select, .gumb{
+        display: inline-block;
+        margin-bottom: 20px;
+        width: 100%
+    }
+
+    .kartice_box{
+        display: inherit;
+    }
+
+    .Duplakartica, .kartica{
+        margin-right: 0;
+    }
+
+    #ispisTabliceDiv{
+        padding: 0;
+        margin: 0;
+    }
+
+    #oglas-1, #oglas-3, #oglas-5 {
+        margin-right: 0;
+    }
+    
+    .pitanja_Box{
+        padding: 0 40px;
+    }
+
+}
+
+/*Desktop*/
+
+@media screen and (min-width: 1102px)
+{
+
+    .footer, .form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .grid_4060{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-gap: 10px;
+    }
+
+    .pitanja_Box, .gumbi{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+    }
+
+    .pitanja, .gumb{
+        grid-column: 2/4;
+    }
+
+    .gumbi, .ravno{
+        grid-column: span 2;
+    }
+
+
+    .navigacija .navigacija_div .mobile-nav #mobile-nav{
+        display: none;
+    }
+
+    #menu{
+        display: none;
+    }
+
+    .Duplakartica:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    .kartica:nth-child(4n){
+        margin-right: 0;
+    }
+
+    .Duplakartica{
+        flex: 0 0 calc(50% - 20px);
+    }
+
+    .kartica{
+        flex: 0 0 calc(25% - 30px);
+    }
+    
+    #pitanja, #moderatoriCBBlock, #moderatoriCBUnblock, #vrstaOglasa{
+        grid-column: span 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+}
